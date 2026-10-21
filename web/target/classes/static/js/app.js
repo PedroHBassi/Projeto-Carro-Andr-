@@ -1,0 +1,1 @@
+function filtrar() { const q = (document.getElementById('busca')?.value || '').toLocaleLowerCase('pt-BR'); document.querySelectorAll('#tabela tbody tr').forEach(tr => tr.style.display = tr.innerText.toLocaleLowerCase('pt-BR').includes(q) ? '' : 'none') }

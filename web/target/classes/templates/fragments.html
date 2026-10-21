@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+    <aside th:fragment="sidebar(active)" class="sidebar">
+        <div class="brand"><span class="logo">N</span><span><b>NEXUS</b><small>SISTEMA DE GESTÃO</small></span></div>
+        <nav><a th:href="@{/}" th:classappend="${active=='inicio'}?' active':''">▦ &nbsp; Início</a><a
+                th:href="@{/funcionarios}" th:classappend="${active=='funcionarios'}?' active':''">♙ &nbsp;
+                Funcionários</a><a th:href="@{/contas-do-mes}"
+                th:classappend="${active=='contas-do-mes'}?' active':''">▤ &nbsp; Contas do mês</a><a
+                th:href="@{/veiculos}" th:classappend="${active=='veiculos'}?' active':''">▣ &nbsp; Veículos</a><a
+                th:href="@{/servicos}" th:classappend="${active=='servicos'}?' active':''">⚙ &nbsp; Serviços</a></nav>
+        <div class="sidefoot">● Nexus</div>
+    </aside>
+</body>
+
+</html>
